@@ -14,6 +14,8 @@ services:
         value: todo_app_qnbk_user
       - key: DB_PASSWORD
         value: TACerVsQhk0VkIPyYkMAAOUQpecys7UE
+      - key: DB_SSL
+        value: "true"
       - key: PORT
         value: 5000
 
