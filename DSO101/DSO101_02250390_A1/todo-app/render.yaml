@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: be-todo
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: DB_HOST
+        value: dpg-d7uq0cnlk1mc73alnoi0-a
+      - key: DB_PORT
+        value: 5432
+      - key: DB_NAME
+        value: todo_app_qnbk
+      - key: DB_USER
+        value: todo_app_qnbk_user
+      - key: DB_PASSWORD
+        value: TACerVsQhk0VkIPyYkMAAOUQpecys7UE
+      - key: DB_SSL
+        value: "true"
+      - key: PORT
+        value: 5000
+
+  - type: web
+    name: fe-todo
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://khamsumyoezer-02250390-dso101-a1-1.onrender.com
