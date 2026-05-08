@@ -15,19 +15,19 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
             post {
                 always {
@@ -38,7 +38,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploy step (can be Docker or simple message)'
+                echo 'Deploy step complete!'
             }
         }
     }
