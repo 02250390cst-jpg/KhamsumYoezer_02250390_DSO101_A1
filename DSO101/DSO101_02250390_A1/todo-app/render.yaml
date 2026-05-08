@@ -5,7 +5,15 @@ services:
     dockerfilePath: ./backend/Dockerfile
     envVars:
       - key: DB_HOST
-        value: your-db-host
+        value: dpg-d7uq0cnlk1mc73alnoi0-a
+      - key: DB_PORT
+        value: 5432
+      - key: DB_NAME
+        value: todo_app_qnbk
+      - key: DB_USER
+        value: todo_app_qnbk_user
+      - key: DB_PASSWORD
+        value: TACerVsQhk0VkIPyYkMAAOUQpecys7UE
       - key: PORT
         value: 5000
 
@@ -15,4 +23,4 @@ services:
     dockerfilePath: ./frontend/Dockerfile
     envVars:
       - key: REACT_APP_API_URL
-        value: https://be-todo.onrender.com
+        value: https://khamsumyoezer-02250390-dso101-a1-1.onrender.com
